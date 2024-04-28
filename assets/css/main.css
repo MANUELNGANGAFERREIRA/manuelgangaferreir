@@ -1,0 +1,90 @@
+@import url('./aside.css');
+@import url('./header.css');
+@import url('./animations.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+:root {
+
+    --header-height: 4.5rem;
+
+    --first-color: #ea1;
+    --title-color: ; 
+    --text-color: #3e3e3e;
+    --text-color-light: #8e8e8e;
+    --body-color: #fff;
+    --body-color-light: #f6f7f8;
+    
+    --body-font: "Poppins", Helvetica, sans-serif;
+    --biggest-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem;
+
+    --font-minium:400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold:700;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    --box-shadow: 0 2px 4px rgba(3, 3, 3, 0.1);
+
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: .35rem;
+    transition:  all .5s;
+}
+::-webkit-scrollbar-thumb {
+    background: #8e8e8e;
+    border-radius: .5rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: .5s all;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    object-fit: cover;
+}
+input, button, textarea {
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1220px) {
+    .container {
+        width: 95%;
+    }
+}

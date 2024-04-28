@@ -1,0 +1,163 @@
+
+body{
+}
+
+.card-perfil {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--text-color);
+    padding: 10px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+}
+
+.Card-Identidade #imgperfil {
+    position: relative;
+    width: 40%;
+    height: 40%;
+    margin-left: 5%;
+    border-radius: 15px;
+    box-shadow: 10px 8px 15px #ea1;
+
+}
+
+.worktext {
+    position: absolute;
+    right: 100px;
+    top: 120px;
+
+    color: #ea1;
+    text-shadow: 0px 20px 5px #ea1;
+    transform: rotate(-40deg);
+    font-family: 'poppies';
+    font-size: 70px;
+
+ animation: animtexto 2s linear 1s infinite alternate; 
+ animation-delay: 3s;
+
+}
+
+.divimg {
+    background-color: #353333;
+    padding: 20px;
+    border-radius: 15px;
+}
+.nome span{
+    font-weight: 500;
+    font-size: 22px;
+
+}
+.contexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #ea1;
+    width: 50%;
+    margin-left: 25%;
+    margin-left: 25%;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#btnEditar{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 16px;
+    transition: .3s;
+}
+#btnEditar:hover{
+    font-size: 20px;
+    margin: 10px;
+    color: #ea1;
+}
+.campus{
+    color: #ea1;
+
+font-size: 16px;
+
+}
+label.campus > div{
+    color:#fff ;
+   }
+ 
+   #rd{
+
+    accent-color: #ea1;
+     width: 2rem;
+     height: 2rem;
+
+}
+
+.Editar{
+
+display: flex;
+flex-direction: column;
+
+
+}
+.Editar input{
+
+    border-radius: 15px;
+    padding-left: 5px;
+    font-size: 15px;
+    margin: 2px;
+}
+.Editar button{
+
+    border-radius: 15px;
+    padding-left: 8px;
+    font-size: 15px;
+    margin: 2px;
+}#sair{
+
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #4a4949;
+    box-shadow: 0px 5px 10px #fff;
+    color: #fff;
+}
+@keyframes animtexto{
+    100%{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    #secaoprofile {
+        display: none;
+    }
+
+    .Card-Identidade #imgperfil {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        
+    box-shadow: 0px 5px 10px #ea1;
+
+    }
+    .divimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .worktext{
+        display: none;
+    }
+    
+.card-perfil {
+    margin: 20px;
+    
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+}

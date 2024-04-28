@@ -1,0 +1,29 @@
+.card-fisrt-and-last-name {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+.card-fisrt-and-last-name > div {
+    width: 45%; 
+}
+.btn-create-account {
+    background-color: var(--text-color);
+    color: #fff;
+}
+.btn-create-account:hover {
+    transform: scale(1.01);    
+    box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width: 500px) {
+    .card-fisrt-and-last-name {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+    .card-fisrt-and-last-name > div {
+        width: 100%;
+    }
+
+
+}

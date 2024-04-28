@@ -1,0 +1,25 @@
+.button-signIn-google {
+    border: 2px solid var(--body-color-light);
+    width: 100%;
+    background-color: transparent;
+    padding: 1.3rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    transition: .5s all;
+}
+.button-signIn-google:hover {
+    background-color: var(--text-color);
+    color: #fff;
+    cursor: pointer;
+}
+.btn-login {
+    background-color: var(--text-color);
+    color: #fff;
+}
+.btn-login:hover {
+    transform: scale(1.01);    
+    box-shadow: var(--box-shadow);
+}

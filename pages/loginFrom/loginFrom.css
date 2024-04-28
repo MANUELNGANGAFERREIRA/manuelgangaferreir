@@ -1,0 +1,143 @@
+#main {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+}
+
+
+/* nav-silde */
+
+.nav-slide {
+    width: 430px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.nav-slide > ul {
+    display: flex;
+    animation-name: anime-image-slide-show;
+    animation-duration: 25s;
+    animation-iteration-count: infinite; 
+    height: 100%;
+    position: absolute;
+}
+.nav-slide > ul > li {
+    width: 430px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(27, 47, 69, 0.356), rgba(27, 47, 69, 0.8));
+}
+.nav-slide > ul > li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* nav-silde end */
+
+
+
+
+/* section-content */
+.section-content {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    width: 450px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
+} 
+.title-loginFrom,
+.title-loginFrom span {
+    font-size: var(--h1-font-size);
+}
+.efectTitle {
+    color: var(--first-color);
+    font-size: var(--biggest-font-size) !important;
+}
+.efectTitleW {
+    font-size: var(--biggest-font-size) !important;
+}
+/* section-content end */
+
+
+/* card-input-label and button-action-loginFrom */
+
+.card-input-label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    transition: .5s all;
+}
+.card-input-label input {
+    background-color: var(--body-color-light);
+    padding: 1.25rem 1.3rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+    transition: .5s all;
+    border: 2px solid transparent;
+    line-height: var(--normal-font-size);
+}
+.card-input-label input:is(:hover, :focus) {
+    border-color: var(--first-color);
+}
+
+.button-action-loginFrom {
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+/* card-input-label and button-action-loginFrom end */
+
+.create-account {
+    width: 100%;
+    text-align: center;
+    color: var(--text-color-light);
+}
+.create-account a {
+    text-decoration: underline;
+    color: var(--first-color);
+}
+.rec-account {
+    color: var(--first-color);
+    margin-bottom: 1.3rem;
+}
+
+.card-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.card-line .line {
+    flex: 1;
+    border: 1px solid var(--body-color-light);
+}
+
+@media screen and (max-width: 942px) {
+    .nav-slide {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 495px) {
+    .card-content {
+        width: 95%;
+    }
+}

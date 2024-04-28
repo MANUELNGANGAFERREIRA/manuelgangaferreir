@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notificações | WorkLink</title>
+
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/styleUser/news.css">
+        <link rel="stylesheet" href="../assets/icon/bootstrap-icons.css">
+        <script src="../assets/js/appShowDataUserOnline.js"></script>
+
+    </head>
+
+    <body onload="ShowDataUserOnline()">
+
+        <!-- header -->
+        <header class="header">
+            <nav class="container nav-header">
+
+                <a href="./indexUser.html" class="logo">
+                    Work<span>Link</span>
+                </a>
+
+                <div class="nav-header-link">
+                    <a href="./newsUser.html" class="link-news" id="news-user-online">
+                        <i class="icon-news bi bi-bell"></i>
+                    </a>
+
+                    <div class="card-img-and-name">
+
+                        <div class="card-img-header" id="card-img-header">
+                            <img src="" class="img-profile-user-online" id="img-header"/>
+                        </div>
+                        <div class="name-and-icon" id="name-and-icon-header">
+                            <span id="name-header" class="first-user-online"></span>
+                            <i class="bi bi-caret-down-fill" id="icon-header"></i>
+                        </div>
+
+                        <ul id="list-dropdown-header">
+                            
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-person"></i>
+                                    <span>Meu Perfil</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-gear"></i>
+                                    <span>Configurações</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-info-lg"></i>
+                                    <span>Ajuda?</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" onclick="logOut()">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    <span>Terminar sessão</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        <!-- header end -->
+
+
+        <!-- aside -->
+        <aside class="aside anime-bottom">
+
+            <a href="./indexUser.html">
+                <i class="icon bi bi-house"></i>
+                <small class="text-link">Início</small>
+            </a>
+            
+            <a href="#">
+                <i class="icon bi bi-search"></i>
+                <small class="text-link">Pesquisar</small>
+            </a>
+
+            <a href="#">
+                <i class="icon bi bi-building"></i>
+                <small class="text-link">Empresa</small>
+            </a>
+
+            <a href="#">
+                <i class="icon bi bi-chat"></i>
+                <small class="text-link">chat</small>
+            </a>
+
+            <a href="#">
+                <i class="icon bi bi-briefcase"></i>
+                <small class="text-link">Recruta</small>
+            </a>
+
+        </aside>
+        <!-- aside end -->
+
+
+        <!-- main -->
+        <main class="container main">
+
+            <section class="section-content-news anime-bottom">
+
+                <div class="card-title-news">
+                    <strong>Algumas novidades</strong>
+                    <a href="#">
+                        Não lidas ( <span>04</span> )
+                    </a>
+                </div>
+
+                <small class="description-news">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nesciunt, veniam consequuntur rerum debitis repellendus unde consequatur, dolorum amet dolores accusantium rem soluta.
+                </small>
+
+                <ul class="list-news-conection">
+
+                    <li class="anime-bottom">
+                        <div class="card-img-news-conection">
+                            <img src="../assets/image/conections/conection1.jpg" alt="" class="img-news-conection">
+                        </div>
+
+                        <div class="card-content-news-user-conection">
+                            <strong>Mariana da Silva</strong>
+
+                            <small>marianadasilva@gmail.com</small>
+
+                            <p class="description-user-news-contact">
+                                Olá tudo bem?!! Chamo-me Poly Carpe, seja bem-vindo ao meu perfil.
+                            </p>
+
+                            <div class="card-buttons-user-news-conection">
+                                <button>Conectar-se</button>
+                                <button>Cancelar</button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+
+
+            </section>
+
+
+            <section class="section-content-profile anime-bottom">
+
+                <div class="backgrond-profile ">
+
+                </div>
+                <div class="content-profile ">
+
+                    <div class="card-img-name-email anime-bottom">
+                        <div class="card-img-profile">
+                            <img  src="" alt="imageprofile" class="img-profile-user-online" />
+                        </div>
+                        <div class="card-name-email">
+                            <strong>
+                                <span class="first-user-online">fisrt name</span> 
+                                <span class="last-user-online">last name</span>
+                            </strong>
+                            <small class="email-user-online">email user</small>
+                        </div>
+                    </div>
+
+                    <p class="desc-user-online">
+                        description user
+                    </p>
+
+                    <ul class="list-skills ">
+                        <li>
+                            <strong class="count-conection-user-online"></strong>
+                            <small>Conexões</small>
+                        </li>
+                       
+                        <li>
+                            <strong class="count-post-user-online"></strong>
+                            <small>Postagens</small>
+                        </li>
+
+                        <li>
+                            <strong class="count-view-user-online"></strong>
+                            <small>Visualizações</small>
+                        </li>
+                    </ul>
+
+                    <a href="#" download="MeuCV" class="button-download-cv">
+                        <span>Baixar CV</span>
+                        <i class="bi bi-cloud-download"></i>
+                    </a>
+
+                    
+                </div>
+
+            </section>
+
+        </main>
+        <!-- main end -->
+        
+
+
+        <script src="../assets/js/globalEvent.js"></script>
+        <script src="../assets/js/logOut.js"></script>
+    
+    </body>
+
+
+</html>

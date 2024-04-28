@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | WorkLink</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/perfil.css">
+    <link rel="stylesheet" href="../assets/css/styleUser/home.css">
+    <link rel="stylesheet" href="../assets/icon/bootstrap-icons.css">
+    <script src="../assets/js/appShowDataUserOnline.js"></script>
+    <script src="../assets/js/appDataHomePageUserOnline.js"></script>
+
+</head>
+
+<body onload="ShowDataUserOnline(), DataHomePageUserOnline()">
+
+    <!-- header -->
+    <header class="header">
+        <nav class="container nav-header">
+
+            <a href="./indexUser.html" class="logo">
+                Work<span>Link</span>
+            </a>
+
+            <div class="nav-header-link">
+                <a href="./newsUser.html" class="link-news" id="news-user-online">
+                    <i class="icon-news bi bi-bell"></i>
+                </a>
+
+                <div class="card-img-and-name">
+
+                    <div class="card-img-header" id="card-img-header">
+                        <img src="" class="img-profile-user-online" id="img-header" />
+                    </div>
+                    <div class="name-and-icon" id="name-and-icon-header">
+                        <span id="name-header" class="first-user-online"></span>
+                        <i class="bi bi-caret-down-fill" id="icon-header"></i>
+                    </div>
+
+                    <ul id="list-dropdown-header">
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-person"></i>
+                                <span>Meu Perfil</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-gear"></i>
+                                <span>Configurações</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-info-lg"></i>
+                                <span>Ajuda?</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" onclick="logOut()">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Terminar sessão</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- header end -->
+
+
+    <!-- aside -->
+    <aside class="aside anime-bottom">
+
+        <a href="./indexUser.html">
+            <i class="icon bi bi-house"></i>
+            <small class="text-link">Início</small>
+        </a>
+
+        <a href="#">
+            <i class="icon bi bi-search"></i>
+            <small class="text-link">Pesquisar</small>
+        </a>
+
+        <a href="#">
+            <i class="icon bi bi-building"></i>
+            <small class="text-link">Empresa</small>
+        </a>
+
+        <a href="#">
+            <i class="icon bi bi-chat"></i>
+            <small class="text-link">chat</small>
+        </a>
+
+        <a href="#">
+            <i class="icon bi bi-briefcase"></i>
+            <small class="text-link">Recruta</small>
+        </a>
+
+    </aside>
+    <!-- aside end -->
+
+
+    <!-- main -->
+    <main class="container main">
+
+
+
+
+
+
+        <section class="card-perfil">
+            <div class="Card-Identidade">
+                <div class="divimg">
+                    <img src="" alt="imageprofile" id="imgperfil" class="img-profile-user-online" />
+                    <span class="worktext"> WorkLinker </span>
+                </div>
+                <div class="info">
+
+                    <p class="nome">
+
+                        <span class="first-user-online"> fisrt name</span>
+                        <span class="last-user-online"> last name</span>
+                    </p>
+                    <p class="desc-user-online">
+                        description user
+                    </p>
+                </div>
+            </div>
+            <div class="contexto">
+                Preferências de vaga
+            </div>
+            <input type="button" value="Editar" id="btnEditar" onclick="Abrir()">
+            <div class="cardados">
+
+                <label for="#" class="campus" id="cargo">
+                    Cargo
+                    <div class="Cargo">Programador</div>
+                </label>
+                <label for="" class="campus" id="TiposLocalidade">
+                    Tipos de Localidade
+                    <div class="TipoLocalida">remoto</div>
+                </label>
+                <label for="" class="campus" id="Localidades">
+                    Localidades(Remota)
+                    <div>EUA,GERMANY,FRANCE</div>
+                </label>
+                <label for="" class="campus" id="DataInicio">
+                    Data de Ínicio
+                    <div>Imediatamente, estou me candidatando agora</div>
+                </label>
+                <label for="" class="campus" id="TipoEmprego">
+                    Tipo de emprego
+                    <div>Tempo integral · Meio período · Contrato · Estágio · Temporário</div>
+                </label>
+                <label for="" class="campus" id="Email">
+                    Email
+                    <div> manuel@gmail.com</div>
+                </label><label for="" class="campus">
+                    Contactos
+                    <div>933474998</div>
+                </label>
+                <div id="hidden">
+                    <div class="Editar">
+                        <strong>Nome</strong>
+                        <input type="text" placeholder="Digite o nome" id="txtnome">
+                        <div class="resnome"></div>
+                        <strong>Email</strong>
+                        <input type="text" placeholder="Digite o Email" id="txtemail">
+                        <div class="resemail"></div>
+                        <strong>Contacto</strong>
+                        <input type="text" placeholder="Digite o Contacto" id="txtnumero">
+                        <div class="rescontacto"></div>
+                        <strong>Cargo</strong>
+                        <input class="TextoCargo" id="txtcargo" type="text">
+
+                        <div class="resultcargo">
+                            <button> Programador <span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+                            <button> Programador <span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+                            <button> Programador <span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+                            <button> Programador <span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+
+
+                        </div>
+                        <strong>
+                            Tipos de Localidade</strong>
+                        <input type="text" id="txtTipoLoc">
+                        <div><button>
+                                remoto
+                            </button></div>
+                        <strong>
+                            Localidades(Remota)</strong>
+                        <input type="text" id="txtLoc">
+                        <div><button>
+                                EUA,GERMANY,FRANCE
+                            </button></div>
+
+                        <strong> Data de Ínicio</strong> <br>
+                        Imediatamente, estou me candidatando agora
+                        <input type="radio" name="rad" id="rd">
+                        Estou apenas conferindo
+                        <input type="radio" name="rad" id="rd">
+
+                        Tipos de Empregos
+                        <div>
+                            <button> Tempo Integral<span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+                            <button> Meio Período <span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+                            <button> Contrato <span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+                            <button> Estágio <span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+                            <button> Temporário<span
+                                    style="font-size: 1.5rem; color: rgb(236, 73, 73); padding-top: 1.8rem;">-</span></button>
+
+                        </div>
+
+                        <button onclick="fechar()" id="sair">Sair sem salvar </button>
+                        <button>Guardar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        </section>
+        <section class="section-content-profile anime-bottom" id="secaoprofile">
+
+            <div class="backgrond-profile ">
+
+            </div>
+            <div class="content-profile ">
+
+                <div class="card-img-name-email anime-bottom">
+                    <div class="card-img-profile">
+                        <img src="" alt="imageprofile" class="img-profile-user-online" />
+                    </div>
+                    <div class="card-name-email">
+                        <strong>
+                            <span class="first-user-online">fisrt name</span>
+                            <span class="last-user-online">last name</span>
+                        </strong>
+                        <small class="email-user-online">email user</small>
+                    </div>
+                </div>
+
+                <p class="desc-user-online">
+                    description user
+                </p>
+
+                <ul class="list-skills ">
+                    <li>
+                        <strong class="count-conection-user-online"></strong>
+                        <small>Conexões</small>
+                    </li>
+
+                    <li>
+                        <strong class="count-post-user-online"></strong>
+                        <small>Postagens</small>
+                    </li>
+
+                    <li>
+                        <strong class="count-view-user-online"></strong>
+                        <small>Visualizações</small>
+                    </li>
+                </ul>
+
+                <a href="#" download="MeuCV" class="button-download-cv">
+                    <span>Baixar CV</span>
+                    <i class="bi bi-cloud-download"></i>
+                </a>
+
+
+            </div>
+
+    </main>
+    <!-- main end -->
+
+    <script src="../assets/js/globalEvent.js"></script>
+    <script src="../assets/js/logOut.js"></script>
+    <script>
+        function cl() {
+            document.getElementById("hidden").style.display = "none";
+        }
+        cl()
+        function fechar() {
+            document.getElementById("hidden").style.display = "none";
+        }
+
+        function Abrir() {
+            document.getElementById("hidden").style.display = "block"
+
+        }
+    </script>
+
+</body>
+
+</html>
